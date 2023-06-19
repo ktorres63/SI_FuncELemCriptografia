@@ -2,14 +2,14 @@
 #longitud
 #GUARDE EL RESULTADO EN EL ARCHIVO “POEMA_PRE.TXT” (el que deberá ser adjuntado)
 
-file = open("poema.txt")
+file = open("poem_4.txt")
 file2 = open("POEMA_PRE.txt", "w")
 
 cont = file.read()
 nPoem = []
 
 for letra in cont:
-    if letra == ' ' or letra == '.' or letra == ',':
+    if letra == ' ' or letra == '.' or letra == ',' or letra =="\n":
         continue
     nPoem.append(letra)
 

@@ -1,5 +1,6 @@
 #Elimine las tildes
-file = open("poema.txt")
+file = open("poem_2.txt")
+file2 = open("poem_3.txt","w")
 cont = file.read()
 nPoem = []
 
@@ -19,5 +20,6 @@ for letra in cont:
         nPoem.append(letra)
 
 NuevoPoema = ''.join(nPoem)
-print(NuevoPoema)
+file2.write(NuevoPoema)
 file.close()
+file2.close()

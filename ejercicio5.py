@@ -5,7 +5,7 @@
 
 def frecuencias(archivo):
 
-    cont = list(archivo.upper())
+    cont = list(archivo)
     freq = {}
 
     for letra in range(ord('A'), ord('Z')+1):

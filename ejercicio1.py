@@ -1,6 +1,8 @@
 # Realizar las siguientes sustituciones: axi, hxj, ñxn, kxl, vxu, wxv, zxy, rxf (tanto mayúsculas como minúsculas).
 
 file = open("poema.txt")
+file2 = open("poem_2.txt", "w")
+
 cont = file.read()
 nPoem = []
 
@@ -26,5 +28,6 @@ for letra in cont:
         nPoem.append(letra)
 
 NuevoPoema = ''.join(nPoem)
-print(NuevoPoema)
+file2.write(NuevoPoema)
 file.close()
+file2.close()
