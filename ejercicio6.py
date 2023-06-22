@@ -21,23 +21,3 @@ print(trig)
 #contamos la repeticion de los trigramas generados
 for t in trig:
     print("Trigrama: ",t,"\trepeticiones: ",trig.count(t))
-
-
-
-
-
-
-
-
-"""
-#NuevoPoema = ''.join(nPoem)
-
-
-
-print("tamaño: ",len(NuevoPoema))
-file2.write(NuevoPoema)
-
-file.close()
-file2.close()
-
-"""
