@@ -7,17 +7,34 @@ file = open("POEMA_PRE.txt")
 trig = []
 
 cont = file.read()
-PoemList = list(cont)
-
-i = 0
 # generamos los trigramas
-while(i< len(PoemList)):
-    if (len(PoemList[i:i+3])==3):
-        trig.append(PoemList[i:i+3])
+i = 0
+while(i< len(cont)):
+    if (len(cont[i:i+3])==3):
+        trig.append(cont[i:i+3])
     i+=1
 
-print(trig)
-
+#print(trig)
 #contamos la repeticion de los trigramas generados
+trigRep = {}
 for t in trig:
-    print("Trigrama: ",t,"\trepeticiones: ",trig.count(t))
+    trigRep[t]= trig.count(t)
+
+for cTrig in trigRep:
+    print("Trigrama: ",cTrig,"\trepeticiones: ",trigRep[cTrig])
+
+
+##distancia entre 2 trigramas
+
+"""
+val='COF'
+cont = 0
+for i in range(len(trig)):
+   
+    if val == trig[i]:
+        break
+    else:
+        cont+=1
+
+
+print(val,": ",cont)"""

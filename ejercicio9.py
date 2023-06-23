@@ -1,6 +1,7 @@
-#Volver a preprocesar el archivo insertando la cadena UNSA cada 26 caracteres, el texto resultante deberá
-#contener un número de caracteres que sea múltiplo de 5, si es necesario rellenar (padding) al final con
-#caracteres # según se necesite
+'''Volver a preprocesar el archivo insertando la cadena EPIS cada 17 caracteres, el texto resultante deberá
+contener un número de caracteres que sea múltiplo de 4, si es necesario rellenar (padding) al final con
+caracteres Z según se necesite'''
+
 file = open("POEMA_PRE.txt")
 file2 = open("POEMA_PRE2.txt","w+")
 content = file.read()
